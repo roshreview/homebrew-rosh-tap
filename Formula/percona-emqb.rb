@@ -1,4 +1,4 @@
-class PerconaServer < Formula
+class PerconaEmqb < Formula
   desc "Drop-in MySQL replacement"
   homepage "https://www.percona.com"
   url "https://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-5.7.24-27/source/tarball/percona-server-5.7.24-27.tar.gz"
@@ -19,7 +19,7 @@ class PerconaServer < Formula
   # https://github.com/Homebrew/homebrew-core/issues/1475
   # Needs at least Clang 3.3, which shipped alongside Lion.
   # Note: MySQL themselves don't support anything below El Capitan.
-  depends_on :macos => :lion
+  depends_on :macos => :sierra
   depends_on "openssl"
 
   conflicts_with "mariadb", "mysql", "mysql-cluster",
