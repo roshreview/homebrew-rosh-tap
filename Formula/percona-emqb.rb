@@ -1,13 +1,14 @@
 class PerconaEmqb < Formula
-  desc "Drop-in MySQL replacement"
-  homepage "https://www.percona.com"
-  url "https://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-5.7.24-27/source/tarball/percona-server-5.7.24-27.tar.gz"
+  desc "Mysql 5.7 Percona Server For EMQB"
+  homepage "https://github.com/roshreview/homebrew-rosh-tap/"
+  url "https://github.com/roshreview/homebrew-rosh-tap/releases/download/v0.1.0/percona-emqb-0.1.0.tar.gz"
   sha256 "999593afa241660bc7860264b46a826faf97d80d411966fade24084f47b249a0"
+  head "https://github.com/roshreview/homebrew-rosh-tap.git"
 
   bottle do
-    sha256 "79938125efb509b03ae247a23198c65fb6684eb49be9336860b5a92b56931b5b" => :mojave
-    sha256 "31d1745e94bc82f5fc8d2c677052a323f1dc76fdebe2369a6e23e583e48cc9ad" => :high_sierra
-    sha256 "1d6ad1ff891982cee38d7886df5dc99f907a802287a6bddb56c55c552dfcb430" => :sierra
+    root_url "https://github.com/roshreview/homebrew-rosh-tap/releases/download/v0.1.0"
+    rebuild 2
+    sha256 "caf3bb2d3b6ad70c9f8bd58f108058cf8afb973634a5ed1ec14c33ff86f96068" => :mojave
   end
 
   pour_bottle? do
