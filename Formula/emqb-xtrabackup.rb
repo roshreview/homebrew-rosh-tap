@@ -1,4 +1,4 @@
-class PerconaXtrabackup < Formula
+class EmqbXtrabackup < Formula
   desc "Open source hot backup tool for InnoDB and XtraDB databases"
   homepage "https://www.percona.com/software/mysql-database/percona-xtrabackup"
   url "https://www.percona.com/downloads/XtraBackup/Percona-XtraBackup-2.4.14/source/tarball/percona-xtrabackup-2.4.14.tar.gz"
